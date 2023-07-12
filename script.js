@@ -29,24 +29,24 @@ function clockstart(){
     mern.innerHTML = `${AMPM}`
 }
 
-function display_message(){
-    let time = new Date()
-    let hrs = time.getHours()
+// function display_message(){
+//     let time = new Date()
+//     let hrs = time.getHours()
     
-    if(hrs>=7 && hrs<11){
-        msg.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
-    }
-    else if(hrs>=11 && hrs<16){
-        msg.innerText = "LET'S HAVE SOME LUNCH !!!"
-    }
-    else if(hrs>=16 && hrs<20){
-        msg.innerText = "STOP YAWNING , GET SOME TEA.. \n   ITS JUST EVENING!!!"
-        msg.style.padding = "30px 22px"
-    }
-    else{
-        msg.innerText = "CLOSE YOUR EYES AND GO TO SLEEP!!"
-    }
-}
+//     if(hrs>=7 && hrs<11){
+//         msg.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
+//     }
+//     else if(hrs>=11 && hrs<16){
+//         msg.innerText = "LET'S HAVE SOME LUNCH !!!"
+//     }
+//     else if(hrs>=16 && hrs<20){
+//         msg.innerText = "STOP YAWNING , GET SOME TEA.. \n   ITS JUST EVENING!!!"
+//         msg.style.padding = "30px 22px"
+//     }
+//     else{
+//         msg.innerText = "CLOSE YOUR EYES AND GO TO SLEEP!!"
+//     }
+// }
 
 setInterval(()=>{
     clockstart();

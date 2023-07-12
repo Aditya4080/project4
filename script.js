@@ -1,4 +1,4 @@
-// dynamic
+// FOR DYNAMIC CLOCK TIMING AND DISPLAY MESSAGE ACCORDING TO THE TIME
 
 var hrs  = document.getElementById("hours")
 var mins = document.getElementById("minutes")
@@ -29,30 +29,13 @@ function clockstart(){
     mern.innerHTML = `${AMPM}`
 }
 
-// function display_message(){
-//     let time = new Date()
-//     let hrs = time.getHours()
-    
-//     if(hrs>=7 && hrs<11){
-//         msg.innerText = "GRAB SOME HEALTHY BREAKFAST!!!"
-//     }
-//     else if(hrs>=11 && hrs<16){
-//         msg.innerText = "LET'S HAVE SOME LUNCH !!!"
-//     }
-//     else if(hrs>=16 && hrs<20){
-//         msg.innerText = "STOP YAWNING , GET SOME TEA.. \n   ITS JUST EVENING!!!"
-//         msg.style.padding = "30px 22px"
-//     }
-//     else{
-//         msg.innerText = "CLOSE YOUR EYES AND GO TO SLEEP!!"
-//     }
-// }
 
 setInterval(()=>{
     clockstart();
     display_message();
 }, 1000);
 
+// FOR SETTING UP THE ALARM AND DISPLAY THE MESSAGE AND IMAGE ACCORDING TO ALARM SETUP
 
 const slot_1 = document.getElementById("wakeup")
 const slot_2 = document.getElementById("lunch")
@@ -61,7 +44,7 @@ const slot_4 = document.getElementById("night")
 
 var update = document.getElementsByClassName("update")
 
-var remainder = document.querySelector(".greetings")
+var remainder = document.querySelector(".message")
 
 var display_image = document.querySelector(".activity")
 
@@ -107,6 +90,7 @@ function setupalarm(){
 
 }
 
+// For Button Text Change
 
 var alarm_button = document.querySelector(".set_alarm")
 
